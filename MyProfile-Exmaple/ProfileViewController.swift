@@ -10,15 +10,22 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    // TODO: create IBOutlet from UIImageView class and link it from Storyboard.
     @IBOutlet weak var userImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        //
         userImageView.isUserInteractionEnabled = true
         userImageView.layer.masksToBounds = true
         userImageView.layer.cornerRadius = userImageView.frame.size.width/2
+        
+        
+        /*
+         * TODO: create Tap Gesture and add it to UserImageView, make sure `isUserInteractionEnabled` is true
+         * Extra : you could make your image as rounded ImageView.
+         */
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageDidTapped(_:)))
         userImageView.addGestureRecognizer(tapGesture)
@@ -30,7 +37,10 @@ class ProfileViewController: UIViewController {
     }
     
     
-    
+    /*
+     * TODO: create a function recived an action and show Alert to ask him if want to change picture or cancel. make sure when user tap on change to call another function to present `ImagePickerView`.
+     *
+     */
     @objc func imageDidTapped(_ sender: UIImageView) {
         
         let alertController = UIAlertController(title: "Warning", message: "Do you want to change your image profile? ", preferredStyle: .actionSheet)
@@ -57,7 +67,10 @@ class ProfileViewController: UIViewController {
 }
 
 
-
+/*
+ * TODO : Here please add and implement `UIImagePickerControllerDelegate` function in order to update userImageView. 
+ *
+ */
 extension ProfileViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
