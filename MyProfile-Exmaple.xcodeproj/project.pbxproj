@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		84ABD3F0213D3BB900457A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD3EF213D3BB900457A92 /* AppDelegate.swift */; };
-		84ABD3F2213D3BB900457A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD3F1213D3BB900457A92 /* ViewController.swift */; };
+		84ABD3F2213D3BB900457A92 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD3F1213D3BB900457A92 /* ProfileViewController.swift */; };
 		84ABD3F5213D3BB900457A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABD3F3213D3BB900457A92 /* Main.storyboard */; };
 		84ABD3F7213D3BBB00457A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ABD3F6213D3BBB00457A92 /* Assets.xcassets */; };
 		84ABD3FA213D3BBB00457A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ABD3F8213D3BBB00457A92 /* LaunchScreen.storyboard */; };
 		84ABD405213D3BBB00457A92 /* MyProfile_ExmapleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD404213D3BBB00457A92 /* MyProfile_ExmapleTests.swift */; };
 		84ABD410213D3BBB00457A92 /* MyProfile_ExmapleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD40F213D3BBB00457A92 /* MyProfile_ExmapleUITests.swift */; };
+		84ABD41E213D3DCF00457A92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABD41D213D3DCF00457A92 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		84ABD3EC213D3BB900457A92 /* MyProfile-Exmaple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyProfile-Exmaple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ABD3EF213D3BB900457A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84ABD3F1213D3BB900457A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84ABD3F1213D3BB900457A92 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84ABD3F4213D3BB900457A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84ABD3F6213D3BBB00457A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84ABD3F9213D3BBB00457A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		84ABD40B213D3BBB00457A92 /* MyProfile-ExmapleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MyProfile-ExmapleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ABD40F213D3BBB00457A92 /* MyProfile_ExmapleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile_ExmapleUITests.swift; sourceTree = "<group>"; };
 		84ABD411213D3BBB00457A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ABD41D213D3DCF00457A92 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				84ABD3EF213D3BB900457A92 /* AppDelegate.swift */,
-				84ABD3F1213D3BB900457A92 /* ViewController.swift */,
+				84ABD3F1213D3BB900457A92 /* ProfileViewController.swift */,
 				84ABD3F3213D3BB900457A92 /* Main.storyboard */,
 				84ABD3F6213D3BBB00457A92 /* Assets.xcassets */,
 				84ABD3F8213D3BBB00457A92 /* LaunchScreen.storyboard */,
 				84ABD3FB213D3BBB00457A92 /* Info.plist */,
+				84ABD41D213D3DCF00457A92 /* LoginViewController.swift */,
 			);
 			path = "MyProfile-Exmaple";
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84ABD3F2213D3BB900457A92 /* ViewController.swift in Sources */,
+				84ABD41E213D3DCF00457A92 /* LoginViewController.swift in Sources */,
+				84ABD3F2213D3BB900457A92 /* ProfileViewController.swift in Sources */,
 				84ABD3F0213D3BB900457A92 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
