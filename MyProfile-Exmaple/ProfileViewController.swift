@@ -11,24 +11,28 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     // TODO: create IBOutlet from UIImageView class and link it from Storyboard.
-    @IBOutlet weak var userImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //
-        userImageView.isUserInteractionEnabled = true
-        userImageView.layer.masksToBounds = true
-        userImageView.layer.cornerRadius = userImageView.frame.size.width/2
-        
         
         /*
          * TODO: create Tap Gesture and add it to UserImageView, make sure `isUserInteractionEnabled` is true
-         * Extra : you could make your image as rounded ImageView.
+         *
          */
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageDidTapped(_:)))
-        userImageView.addGestureRecognizer(tapGesture)
+        
+        // Code here.
+        
+        
+        /*
+         * Extra : you could make your image as rounded ImageView.
+         *
+         */
+        
+        // Extra Code here
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,17 +47,7 @@ class ProfileViewController: UIViewController {
      */
     @objc func imageDidTapped(_ sender: UIImageView) {
         
-        let alertController = UIAlertController(title: "Warning", message: "Do you want to change your image profile? ", preferredStyle: .actionSheet)
-        
-        let changePictureAction = UIAlertAction(title: "Change Image Profile", style: .default, handler: { [weak self] action in
-            self?.showImagePicker(sender)
-        })
-        
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        
-        alertController.addAction(changePictureAction)
-        alertController.addAction(cancel)
-        present(alertController, animated: true, completion: nil)
+    
     }
     
     func showImagePicker(_ sender: UIImageView) {
@@ -68,16 +62,6 @@ class ProfileViewController: UIViewController {
 
 
 /*
- * TODO : Here please add and implement `UIImagePickerControllerDelegate` function in order to update userImageView. 
+ * TODO : Here please add and implement `UIImagePickerControllerDelegate` function in order to update userImageView.
  *
  */
-extension ProfileViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            self.userImageView.image = image
-        }
-        picker.dismiss(animated: true, completion: nil)
-    }
-}
