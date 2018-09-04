@@ -17,18 +17,23 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //
-        userImageView.isUserInteractionEnabled = true
-        userImageView.layer.masksToBounds = true
-        userImageView.layer.cornerRadius = userImageView.frame.size.width/2
-        
         
         /*
          * TODO: create Tap Gesture and add it to UserImageView, make sure `isUserInteractionEnabled` is true
-         * Extra : you could make your image as rounded ImageView.
+         *
          */
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.imageDidTapped(_:)))
         userImageView.addGestureRecognizer(tapGesture)
+        
+        /*
+         * Extra : you could make your image as rounded ImageView.
+         *
+         */
+        
+        userImageView.isUserInteractionEnabled = true
+        userImageView.layer.masksToBounds = true
+        userImageView.layer.cornerRadius = userImageView.frame.size.width/2
     }
     
     override func didReceiveMemoryWarning() {
