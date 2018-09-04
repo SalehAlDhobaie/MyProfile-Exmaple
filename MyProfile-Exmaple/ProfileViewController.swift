@@ -42,6 +42,9 @@ class ProfileViewController: UIViewController {
     }
     
     
+    
+    
+    
     /*
      * TODO: create a function recived an action and show Alert to ask him if want to change picture or cancel. make sure when user tap on change to call another function to present `ImagePickerView`.
      *
@@ -69,7 +72,17 @@ class ProfileViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
+    /// sharing todo 
+    func shareFunction(_ sender: UIImageView) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
 }
+
 
 
 /*
