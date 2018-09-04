@@ -46,7 +46,7 @@ class ProfileViewController: UIViewController {
     
     
     /*
-     * TODO: create a function recived an action and show Alert to ask him if want to change picture or cancel. make sure when user tap on change to call another function to present `ImagePickerView`.
+     * TODO: Create a function that receives an action and shows an alert to ask the user if they want to change the profile picture or to cancel the alert. Make sure to call another function to build and present `ImagePickerView`when the user taps on change.
      *
      */
     @objc func imageDidTapped(_ sender: UIImageView) {
@@ -57,9 +57,14 @@ class ProfileViewController: UIViewController {
             self?.showImagePicker(sender)
         })
         
+        let shareProfileAction = UIAlertAction(title: "Share Profile", style: .default, handler: { [weak self] action in
+            self?.shareFunction(sender)
+        })
+        
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alertController.addAction(changePictureAction)
+        alertController.addAction(shareProfileAction)
         alertController.addAction(cancel)
         present(alertController, animated: true, completion: nil)
     }
@@ -72,13 +77,13 @@ class ProfileViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
-    /// sharing todo 
+    /// This Function will be call when user share profile
     func shareFunction(_ sender: UIImageView) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.allowsEditing = false
-        imagePicker.sourceType = .photoLibrary
-        present(imagePicker, animated: true, completion: nil)
+        let image = userImageView.image
+        let items : [Any] = ["This is my profile info", image!]
+        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        present(ac, animated: true)
+        
     }
     
 }
