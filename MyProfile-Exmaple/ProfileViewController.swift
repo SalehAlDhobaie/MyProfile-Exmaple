@@ -60,12 +60,10 @@ class ProfileViewController: UIViewController {
         present(imagePicker, animated: true, completion: nil)
     }
     
-    /// This Function will be call when user share profile
+    // TODO: please write share function will be call when user tap on Share option by calling `UIActivityViewController` class and attach any message with `userImageProfile`
     func shareFunction(_ sender: UIImageView) {
-        let image = userImageView.image
-        let items : [Any] = ["This is my profile info", image!]
-        let ac = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        present(ac, animated: true)
+
+        
         
     }
     
