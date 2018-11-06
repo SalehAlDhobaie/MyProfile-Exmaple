@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // Note: update this var in `delegate` and use it to decide wether to `performeSegue` or not .
+    var isValidInput : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

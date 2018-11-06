@@ -11,7 +11,6 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     // TODO: create IBOutlet from UIImageView class and link it from Storyboard.
-    //
     
     
     override func viewDidLoad() {
@@ -52,6 +51,7 @@ class ProfileViewController: UIViewController {
     @objc func imageDidTapped(_ sender: UIImageView) {
         
        // for Saleh write alert
+        
     }
     
     func showImagePicker(_ sender: UIImageView) {
@@ -69,7 +69,6 @@ class ProfileViewController: UIViewController {
         
     }
     
-    // snapshot image ..
     
 }
 
