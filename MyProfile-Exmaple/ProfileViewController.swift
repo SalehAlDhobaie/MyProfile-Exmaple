@@ -11,7 +11,8 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     // TODO: create IBOutlet from UIImageView class and link it from Storyboard.
-    @IBOutlet weak var userImageView: UIImageView!
+    //
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class ProfileViewController: UIViewController {
         
         /// Your Code here
         
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,7 +51,7 @@ class ProfileViewController: UIViewController {
      */
     @objc func imageDidTapped(_ sender: UIImageView) {
         
-       
+       // for Saleh write alert
     }
     
     func showImagePicker(_ sender: UIImageView) {
@@ -67,6 +69,8 @@ class ProfileViewController: UIViewController {
         
     }
     
+    // snapshot image ..
+    
 }
 
 
@@ -75,13 +79,4 @@ class ProfileViewController: UIViewController {
  * TODO : Here please add and implement `UIImagePickerControllerDelegate` function in order to update userImageView.
  *
  */
-extension ProfileViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            self.userImageView.image = image
-        }
-        picker.dismiss(animated: true, completion: nil)
-    }
-}
+

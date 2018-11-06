@@ -21,7 +21,6 @@ class LoginViewController: UIViewController {
         
         usernameTextField.delegate = self
         passwordTextField.delegate = self
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,6 +31,8 @@ class LoginViewController: UIViewController {
     @IBAction func loginAction(_ sender: UIButton) {
         
         
+        // if is username valid && pass valid do: performSegue
+        performSegue(withIdentifier: "<#T##String#>", sender: nil)
     }
     
     
@@ -52,3 +53,6 @@ class LoginViewController: UIViewController {
  * TODO : Here please add and implement `UITextFieldDelegate` function in order to validate Username/Password. username should be 4+ chars, password should be 8 chars
  *
  */
+
+
+// Extra : adding red boarder .. 

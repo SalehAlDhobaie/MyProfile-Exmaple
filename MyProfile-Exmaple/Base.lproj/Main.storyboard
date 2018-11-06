@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djZ-c5-axy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="djZ-c5-axy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,9 +68,6 @@
                                                         <integer key="value" value="16"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="IH0-7e-bgi" kind="show" id="WUO-a3-ctQ"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -110,6 +106,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="67y-Hm-mmX" id="i6R-sg-iYI"/>
                         <outlet property="usernameTextField" destination="73E-S1-udE" id="SxJ-8E-kTh"/>
+                        <segue destination="IH0-7e-bgi" kind="presentation" id="Ttg-yW-cft"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rzq-lq-NGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -164,7 +161,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvt-wi-hZC">
-                                        <rect key="frame" x="116" y="160" width="79" height="20.5"/>
+                                        <rect key="frame" x="116.5" y="160" width="78.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -261,9 +258,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="followers" width="512" height="512"/>
-        <image name="following" width="512" height="512"/>
-        <image name="likes" width="512" height="512"/>
-        <image name="placeholder" width="256" height="256"/>
+        <image name="followers" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="following" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="likes" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="placeholder" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>
