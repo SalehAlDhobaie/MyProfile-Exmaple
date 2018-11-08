@@ -12,11 +12,15 @@ class ProfileViewController: UIViewController {
     
     // TODO: create IBOutlet from UIImageView class and link it from Storyboard.
     @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    var userNameValue : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //
+        
+        self.usernameLabel.text = userNameValue
         
         /*
          * TODO: create Tap Gesture and add it to UserImageView, make sure `isUserInteractionEnabled` is true
