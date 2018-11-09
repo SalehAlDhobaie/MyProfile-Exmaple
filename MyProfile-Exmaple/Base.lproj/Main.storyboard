@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
+        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +14,10 @@
         <scene sceneID="qVE-GS-lmB">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="djZ-c5-axy" customClass="LoginViewController" customModule="MyProfile_Exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fg5-v4-eIQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ku-K3-KsT"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dwy-ft-KYc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,16 +96,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dla-gP-cf7" firstAttribute="leading" secondItem="XUc-Zg-VVT" secondAttribute="leading" constant="32" id="7zj-or-LK9"/>
-                            <constraint firstItem="dla-gP-cf7" firstAttribute="centerX" secondItem="XUc-Zg-VVT" secondAttribute="centerX" id="ED1-YV-JAj"/>
-                            <constraint firstItem="dla-gP-cf7" firstAttribute="top" secondItem="XUc-Zg-VVT" secondAttribute="top" constant="128" id="JCb-VN-7ia"/>
+                            <constraint firstItem="dla-gP-cf7" firstAttribute="leading" secondItem="Dwy-ft-KYc" secondAttribute="leading" constant="32" id="7zj-or-LK9"/>
+                            <constraint firstItem="dla-gP-cf7" firstAttribute="centerX" secondItem="Dwy-ft-KYc" secondAttribute="centerX" id="ED1-YV-JAj"/>
+                            <constraint firstItem="dla-gP-cf7" firstAttribute="top" secondItem="fg5-v4-eIQ" secondAttribute="bottom" constant="128" id="JCb-VN-7ia"/>
                             <constraint firstItem="YTc-JO-LhG" firstAttribute="trailing" secondItem="dla-gP-cf7" secondAttribute="trailing" constant="8" id="LK4-ND-4Uz"/>
                             <constraint firstItem="YTc-JO-LhG" firstAttribute="leading" secondItem="dla-gP-cf7" secondAttribute="leading" constant="-8" id="dIC-2J-jzN"/>
                             <constraint firstItem="YTc-JO-LhG" firstAttribute="top" secondItem="dla-gP-cf7" secondAttribute="top" constant="-32" id="dVC-3f-Nmz"/>
-                            <constraint firstItem="XUc-Zg-VVT" firstAttribute="trailing" secondItem="dla-gP-cf7" secondAttribute="trailing" constant="32" id="drp-6v-u5Q"/>
+                            <constraint firstAttribute="trailing" secondItem="dla-gP-cf7" secondAttribute="trailing" constant="32" id="drp-6v-u5Q"/>
                             <constraint firstItem="YTc-JO-LhG" firstAttribute="bottom" secondItem="dla-gP-cf7" secondAttribute="bottom" constant="32" id="fuc-HP-kae"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="XUc-Zg-VVT"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="67y-Hm-mmX" id="i6R-sg-iYI"/>
@@ -135,6 +138,10 @@
         <scene sceneID="M0l-FG-Nti">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MAk-Ss-Wzz" customClass="ProfileViewController" customModule="MyProfile_Exmaple" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcA-Vh-1Dd"/>
+                        <viewControllerLayoutGuide type="bottom" id="e2X-mH-hC7"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eXk-sb-nPA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,16 +243,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.96620008680555558" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="szu-Cu-XMz" firstAttribute="top" secondItem="0Ck-dT-eHA" secondAttribute="top" constant="128" id="2Er-OW-PXM"/>
+                            <constraint firstItem="szu-Cu-XMz" firstAttribute="top" secondItem="XcA-Vh-1Dd" secondAttribute="bottom" constant="128" id="2Er-OW-PXM"/>
                             <constraint firstItem="1rN-51-dRM" firstAttribute="leading" secondItem="szu-Cu-XMz" secondAttribute="leading" constant="-8" id="2LG-zX-2KN"/>
                             <constraint firstItem="1rN-51-dRM" firstAttribute="bottom" secondItem="szu-Cu-XMz" secondAttribute="bottom" constant="32" id="4Hm-RM-ysR"/>
-                            <constraint firstItem="0Ck-dT-eHA" firstAttribute="trailing" secondItem="szu-Cu-XMz" secondAttribute="trailing" constant="32" id="IXT-U8-cJ4"/>
-                            <constraint firstItem="szu-Cu-XMz" firstAttribute="centerX" secondItem="0Ck-dT-eHA" secondAttribute="centerX" id="LJo-VM-Dqf"/>
+                            <constraint firstAttribute="trailing" secondItem="szu-Cu-XMz" secondAttribute="trailing" constant="32" id="IXT-U8-cJ4"/>
+                            <constraint firstItem="szu-Cu-XMz" firstAttribute="centerX" secondItem="eXk-sb-nPA" secondAttribute="centerX" id="LJo-VM-Dqf"/>
                             <constraint firstItem="1rN-51-dRM" firstAttribute="trailing" secondItem="szu-Cu-XMz" secondAttribute="trailing" constant="8" id="lLT-Om-pKX"/>
-                            <constraint firstItem="szu-Cu-XMz" firstAttribute="leading" secondItem="0Ck-dT-eHA" secondAttribute="leading" constant="32" id="rfh-yW-jYl"/>
+                            <constraint firstItem="szu-Cu-XMz" firstAttribute="leading" secondItem="eXk-sb-nPA" secondAttribute="leading" constant="32" id="rfh-yW-jYl"/>
                             <constraint firstItem="1rN-51-dRM" firstAttribute="top" secondItem="szu-Cu-XMz" secondAttribute="top" constant="-32" id="uMs-lp-cQO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Ck-dT-eHA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Khb-gH-2wa"/>
                     <connections>
