@@ -5,8 +5,8 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <development version="8000" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -105,6 +105,7 @@
                             <constraint firstAttribute="trailing" secondItem="dla-gP-cf7" secondAttribute="trailing" constant="32" id="drp-6v-u5Q"/>
                             <constraint firstItem="YTc-JO-LhG" firstAttribute="bottom" secondItem="dla-gP-cf7" secondAttribute="bottom" constant="32" id="fuc-HP-kae"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="AjL-ob-c2A"/>
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="67y-Hm-mmX" id="i6R-sg-iYI"/>
@@ -252,6 +253,7 @@
                             <constraint firstItem="szu-Cu-XMz" firstAttribute="leading" secondItem="eXk-sb-nPA" secondAttribute="leading" constant="32" id="rfh-yW-jYl"/>
                             <constraint firstItem="1rN-51-dRM" firstAttribute="top" secondItem="szu-Cu-XMz" secondAttribute="top" constant="-32" id="uMs-lp-cQO"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="NZi-W9-vHN"/>
                     </view>
                     <navigationItem key="navigationItem" id="Khb-gH-2wa"/>
                     <connections>
